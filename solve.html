@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solve Quadratic Equation</title>
+</head>
+<body>
+    <script>
+        let aStr = prompt("Please enter coefficient a of the quadratic equation (a > 0):");
+        let bStr = prompt("Please enter coefficient b of the quadratic equation:");
+        let cStr = prompt("Please enter coefficient c of the quadratic equation:");
+
+        let a = parseFloat(aStr);
+        let b = parseFloat(bStr);
+        let c = parseFloat(cStr);
+
+        let delta = b * b - 4 * a * c;
+
+        let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+        alert(`The two roots of the quadratic equation ax² + bx + c = 0 are:\nx1 = ${x1}\nx2 = ${x2}`);
+
+        console.log("The two roots of the quadratic equation ax² + bx + c = 0 are:");
+        console.log("x1 =", x1);
+        console.log("x2 =", x2);
+    </script>
+</body>
+</html>
