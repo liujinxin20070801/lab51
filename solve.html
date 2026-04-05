@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quadratic Equation</title>
+</head>
+<body>
+    <h1>Solve ax² + bx + c = 0</h1>
+    <button onclick="calculate()">Click here to start</button>
+
+    <script>
+        function calculate() {
+            let a = parseFloat(prompt("Enter a (a>0):"));
+            let b = parseFloat(prompt("Enter b:"));
+            let c = parseFloat(prompt("Enter c:"));
+
+            let delta = b*b - 4*a*c;
+            let x1 = (-b + Math.sqrt(delta)) / (2*a);
+            let x2 = (-b - Math.sqrt(delta)) / (2*a);
+
+            alert("x1 = " + x1 + "\nx2 = " + x2);
+            console.log("x1 =", x1);
+            console.log("x2 =", x2);
+        }
+    </script>
+</body>
+</html>
